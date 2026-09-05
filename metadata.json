@@ -1,0 +1,6 @@
+{
+  "name": "CareerIQ",
+  "description": "AI Career Intelligence & Employability Platform: Understand where you stand, discover what you're missing, and know what to do next.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
