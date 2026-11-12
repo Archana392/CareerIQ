@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  :root.dark {
+    color-scheme: dark;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  .dark body {
+    color: #f8fafc;
+    background-color: #090d16;
+  }
+}
+
+/* High-Fidelity Dark Mode Styling & Clean Elevation */
+.dark {
+  --bg-surface: #0f172a;
+  --bg-elevated: #1e293b;
+  --border-subtle: #334155;
+  color-scheme: dark;
+}
+
+/* Ensure form controls are readable and clean in dark mode */
+.dark input:not([type="checkbox"]):not([type="radio"]):not(.keep-light),
+.dark select:not(.keep-light),
+.dark textarea:not(.keep-light) {
+  background-color: #131d2e;
+  color: #f8fafc;
+  border-color: #27354a;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748b;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

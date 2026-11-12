@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerIQ - AI Powered Career Intelligence & Employability Platform</title>
+    <meta name="description" content="AI Powered Career Intelligence & Employability Platform: Understand where you stand, discover what you're missing, and know what to do next." />
+    <meta property="og:title" content="CareerIQ - AI Powered Career Intelligence & Employability Platform" />
+    <meta property="og:description" content="AI Powered Career Intelligence & Employability Platform: Understand where you stand, discover what you're missing, and know what to do next with AI-powered resume intelligence, ATS benchmarking, and skill roadmaps." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/jpeg" href="/assets/aistudio/WhatsApp_Image_2026-10-27_at_1.54.43_PM_08f3d101.jpeg" />
+    <link rel="apple-touch-icon" href="/assets/aistudio/WhatsApp_Image_2026-10-27_at_1.54.43_PM_08f3d101.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('careeriq_theme');
+          var isDark = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F8FAFC] dark:bg-[#090D16] text-[#0F172A] dark:text-[#F8FAFC] antialiased min-h-screen selection:bg-blue-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
